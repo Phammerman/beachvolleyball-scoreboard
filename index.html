@@ -1,0 +1,49 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="scorecard">
+                <h3>Team 1</h3>
+                <div class="score-container">
+                    <button class="point-btn" onclick="addPointTeamOne(1)">+1</button>
+                    <p id="point-team-one-el" class="score-count">0</p>
+                    <button class="point-btn" onclick="addPointTeamOne(-1)">-1</button>
+                </div>
+                <div class="serve-container">
+                    <p>Serve order</p>
+                    <div id="first-server-team-one" class="serve-order-el" onclick="serveOrderTeamOne('first')">
+                        <p>1</p>
+                    </div>
+                    <div id="second-server-team-one" class="serve-order-el" onclick="serveOrderTeamOne('second')">
+                        <p>2</p>
+                    </div>
+                </div>
+            </div>
+            <button id="new-game" onclick="newGame()">New Game</button>
+            <div class="scorecard">
+                <h3>Team 2</h3>
+                <div class="score-container">
+                    <button class="point-btn" onclick="addPointTeamTwo(1)">+1</button>
+                    <p id="point-team-two-el" class="score-count">0</p>
+                    <button class="point-btn" onclick="addPointTeamTwo(-1)">-1</button>
+                </div>
+                <div class="serve-container">
+                    <p>Serve order</p>
+                    <div id="first-server-team-two" class="serve-order-el"  onclick="serveOrderTeamTwo('first')">
+                        <p>1</p>
+                    </div>
+                    <div id="second-server-team-two" class="serve-order-el"  onclick="serveOrderTeamTwo('second')">
+                        <p>2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

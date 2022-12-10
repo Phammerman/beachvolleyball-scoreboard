@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("beach.jpg");
+    background-size: cover; 
+    color: #1B517D; 
+}
+
+body, 
+.container, 
+.score-container, 
+.serve-order-el, 
+.serve-container {
+    display: flex;
+}
+
+body,
+.score-container,
+.serve-order-el,
+.serve-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    
+    height: 300px;
+    max-width: 660px;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(10, 10, 80, 0.5);
+    border: 2px solid #3589A4;
+    border-radius: 16px; 
+    box-shadow: 4px 4px 10px rgba(10, 10, 80, 0.5); 
+}
+
+.scorecard {
+    background: #A8CEE7;
+    border: 2px solid #3589A4;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 30px;
+    text-align: center;
+    box-shadow: 1px 1px 8px rgba(10, 10, 80, 0.5);
+}
+
+.score-count {
+    width: 70px;
+    background: #1B517D;
+    color: #E3ECF3;
+    text-shadow: 0px 0px 1px;
+    font-size: 42px;
+    font-family: 'Orbitron', sans-serif;
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid black;
+}
+
+.point-btn, #new-game {
+    background-color: transparent;
+    font-family: 'Orbitron', sans-serif;
+    border: 1px solid #1B517D;
+    color: #1B517D;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#new-game {
+    background: #A8CEE7;
+    color: #1B517D;
+    border: 2px solid #3589A4;
+    box-shadow: 1px 1px 8px #1B517D;
+    padding: 10px 25px
+}
+
+.serve-order-el {
+    font-size: 14px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.serve-container {
+    font-weight: bold;
+    flex-wrap: wrap;
+    column-gap: 1em;
+}
+
+
+
+
+
+.serve-container > p {
+    text-align: center;
+    flex-basis: 100%; 
+}
+
